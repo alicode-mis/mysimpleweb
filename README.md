@@ -8,7 +8,7 @@ A clean, responsive web application that allows users to interact with a dynamic
 
 Click the badge button below to view and interact with the fully operational live web page:
 
-[![Live Web Preview](https://shields.io)](https://github.io)
+
 
 --- https://alicode-mis.github.io/mysimpleweb/
 
