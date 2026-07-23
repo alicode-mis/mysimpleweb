@@ -4,63 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Counter Project</title>
-    
-    <!-- CSS Section: Handles the layout, colors, and fonts -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .counter-container {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        h1 {
-            color: #333333;
-            margin-bottom: 20px;
-        }
-
-        #counter-value {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #007bff;
-            margin: 20px 0;
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 5px;
-            transition: background-color 0.2s;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        button.decrease {
-            background-color: #dc3545;
-        }
-
-        button.decrease:hover {
-            background-color: #bd2130;
-        }
-    </style>
+    <!-- Links your external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -70,34 +15,11 @@
         <div id="counter-value">0</div>
         <button class="decrease" id="decrease-btn">Decrease</button>
         <button id="increase-btn">Increase</button>
+        <button class="addTwo" id="addTwo-btn">Add Two</button>
+   
     </div>
 
-    <!-- JavaScript Section: Adds functionality and interactivity -->
-    <script>
-        // Track the current counter state
-        let count = 0;
-
-        // Select the HTML elements using their unique IDs
-        const counterDisplay = document.getElementById('counter-value');
-        const increaseButton = document.getElementById('increase-btn');
-        const decreaseButton = document.getElementById('decrease-btn');
-
-        // Function to update the number shown on the screen
-        function updateDisplay() {
-            counterDisplay.textContent = count;
-        }
-
-        // Event listener to increase the count when clicked
-        increaseButton.addEventListener('click', () => {
-            count++;
-            updateDisplay();
-        });
-
-        // Event listener to decrease the count when clicked
-        decreaseButton.addEventListener('click', () => {
-            count--;
-            updateDisplay();
-        });
-    </script>
+    <!-- Links your external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
