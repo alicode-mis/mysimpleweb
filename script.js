@@ -6,6 +6,8 @@ const counterDisplay = document.getElementById('counter-value');
 const increaseButton = document.getElementById('increase-btn');
 const decreaseButton = document.getElementById('decrease-btn');
 const addTwoButton = document.getElementById('addTwo-btn');
+const chngeButton = document.getElementById('save-btn');
+const nameDisplay = document.getElementById('name-value');
 
 // Function to update the number shown on the screen
 function updateDisplay() {
@@ -27,4 +29,9 @@ decreaseButton.addEventListener('click', () => {
 addTwoButton.addEventListener('click', ()=>{
     count+=2;
     updateDisplay();
-})
+});
+
+
+chngeButton.addEventListener('click', () => {
+    nameDisplay.textContent = "Hellow World";
+});

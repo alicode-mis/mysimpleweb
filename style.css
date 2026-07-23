@@ -2,10 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #87a987;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    gap: 20px;
 }
 
 .counter-container {
@@ -16,6 +18,14 @@ body {
     text-align: center;
 }
 
+.info-container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 350px;
+}
 h1 {
     color: #333333;
     margin-bottom: 20px;
@@ -40,6 +50,15 @@ button {
     transition: background-color 0.2s;
 }
 
+#save-btn{
+    background-color: aqua;
+    margin-top: 10px;
+    color:#bd2130
+}
+
+#save-btn:hover{
+    background-color: #0056b3;
+}
 button:hover {
     background-color: #0056b3;
 }
